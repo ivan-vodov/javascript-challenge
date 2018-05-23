@@ -6,22 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <div class="container">
     <div class="row">
-      <h1>UFO Sighting Data</h1>
-      <div class="col-md-4">
-        <div class="form-group">
-          <input type="text" class="form-control" id="input" placeholder="Date">
-          <a id="filter" class="btn btn-default">Filter</a>
+      <div class="col-md-12">
+        <h1>UFO Sighting Data</h1>
+        <hr/>
+        <div class="form-inline">
+          <div class="form-group">
+            <input type="text" class="form-control" id="inputDate" placeholder="Date" size="8">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="inputCity" placeholder="City" size="15">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="inputState" placeholder="State" size="2">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="inputShape" placeholder="Shape" size="7">
+          </div>
+          <a id="filter" class="btn btn-primary">Filter</a>
+          <a id="reset" class="btn btn-default">Reset</a>
         </div>
       </div>
     </div>
+    <hr/>
     <div class="row">
       <div class="col-md-12">
         <table class="table table-striped">
